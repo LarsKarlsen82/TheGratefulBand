@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/logo.css">
+    <link rel="stylesheet" href="./assets/css/modal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="./assets/js/main.js"defer></script>
+    <script src="./assets/js/nav.js"defer></script>
+    <script src="./assets/js/footer.js"defer></script>
+    <script src="./assets/js/modal.js"defer></script>
+    
+    <title>The Grateful Band</title>
+</head>
+<body>
+  
+    <nav id="nav-bar" class="nav nav-bar-top">
+        <div class="wrapper">
+            <div class="nav-logo">
+                <div class="e-logo">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" id="orbit">
+                        <circle fill="none" stroke="#fff" stroke-width="5" cx="50" cy="50" r="40"/>
+                        <circle fill="#EB1E51" cx="50" cy="50" r="24"/>
+                        <text x="50%" y="50%" dominant-baseline="middle" width="34" text-anchor="middle" fill="#fff" style="font-size:300%">♪</text>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" id="electron">
+                        <circle fill="#EB1E51" cx="10" cy="90" r="10"/>
+                    </svg>
+                </div>
+            
+                <h1 class="logo-title">The Grateful Band</h1>
+            
+            </div>
+            <input type="checkbox" id="menu-toggle">
+              <label for="menu-toggle" class="label-toggle hamburger"></label>
+            </input>
+
+            <ul class="menu-list">
+                <!-- Modal Trigger Links -->
+                <a href="#" class="nav-link" onclick="openModal('Concerts in 2023', 
+                    [
+                        { title: 'Denmark', items: ['Copenghagen, 2. december , 20.00', 'Aalborg, 4. december, 20.00', 'Aarhus, 5. december, 20.00'] },
+                        { title: 'Germany', items: ['Berlin, 10. december, 20.00', '(vacant)', 'Item 4'] },
+                        { title: 'List 2', items: ['USA', 'New Yrk, 12. december, 20.00 2', 'Item 4'] }
+                    ])">Concerts</a>
+                <a href="#" class="nav-link" onclick="openModal('Discography', 
+                    [
+                        { title: 'The Grateful Band', items: ['Album , Groovy, 1999', 'Album, is it worth it? , 2000', 'Album, Fun times, 2006'] },
+
+                    ])">Discography</a>
+                <a href="#about" class="nav-link" onclick="openModal('Contact info', 'The Grateful Band email: Grateful@gmail.com', 'test')">Contact us</a>
+
+
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <div class="close" onclick="closeModal()">
+                        <i class="fa-regular fa-circle-xmark" style="color: #fff;"></i>
+                    </div>
+                    <h2 id="modalTitle"></h2>
+                    <!-- Add your modal content here -->
+                    <p id="modalContent"> Haluu </p>
+       
+                </div>
+            </div>
+
+            </ul>
+      </div>
+    </nav>
+    <header>
+        <h1>Welcome to our page </h1>
+    </header>
+<div class="parallax-section"></div>
+
+<section id="hvem">
+    <h2>Who are we?</h2>
+    <div class="image-grid">
+        
+        <div class="image-item">
+            <img src="./assets/img/pexels-brett-sayles-1309240.jpg" alt="Image 1">
+            <div class="image-text">Brett Sayles <br> Singer</div>
+        </div>
+
+        <div class="image-item">
+            <img src="./assets/img/pexels-jc-siller-8634867.jpg" alt="Image 2">
+            <div class="image-text">JC Stiller <br> Drums</div>
+        </div>
+
+        <div class="image-item">
+            <img src="./assets/img/pexels-josh-sorenson-995301.jpg" alt="Image 3">
+            <div class="image-text">Josh Sorenson <br> Guitar</div>
+        </div>
+
+        <div class="image-item">
+            <img src="./assets/img/pexels-oleg-magni-1813124.jpg" alt="Image 4">
+            <div class="image-text">Oleg Magni <br> Bass</div>
+        </div>
+    </div>
+</section>
+
+<article>
+
+    <div class="MyBand">
+    <h2>Our history as a band</h2>
+    <p>Our band started in 1995 in Denmark</p>
+
+    </div>  
+</article>
+
+    <div class="hero">
+        <div class="slider" id="slider">
+            <div class="slide active">
+                <img src="./assets/img/pexels-brett-sayles-1309240.jpg" alt="Image 1">
+            </div>
+            <div class="slide">
+                <img src="./assets/img/pexels-jc-siller-8634867.jpg" alt="Image 2">
+            </div>
+            <div class="slide">
+                <img src="./assets/img/pexels-josh-sorenson-995301.jpg" alt="Image 3">
+            </div>
+
+        </div>
+        <div class="bullets" id="bullets"></div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="bubbles">
+        </div>
+      <div class="footer-content">
+          <div class="footer-logo">
+            <i class="fa-solid fa-guitar"></i>
+          </div>
+          <div class="footer-section about">
+              <h1>About Us</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+          <div class="footer-section links">
+              <h1>Quick Links</h1>
+              <ul>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#section3">Services</a></li>
+                  <li><a href="#" onclick="openAboutModal()">About</a></li>
+                  <li><a href="/contact">Contact</a></li>
+              </ul>
+          </div>
+          <div class="footer-section contact-form">
+            <h1>Sign up to newsletter</h1>
+            <form id="contactForm" action="#" onsubmit="submitForm(event)">
+                <input type="text" id="name" name="name" class="text-input contact-input" placeholder="Your Name">
+                <span id="nameError" class="error"></span>
+    
+                <input type="email" id="email" name="email" class="text-input contact-input" placeholder="Your Email">
+                <span id="emailError" class="error"></span>
+    
+                <textarea rows="4" id="message" name="message" class="text-input contact-input" placeholder="Your Message"></textarea>
+                <span id="messageError" class="error"></span>
+    
+                <button type="submit" class="btn btn-primary">Send</button>
+            </form>
+        </div>
+        <div id="successMessage"></div>
+      </div>
+      <div class="footer-bottom">
+          &copy; 2023 TechCollege Aalborg | Created by Lars Karlsen
+      </div>
+  </footer>
+  <svg style="position: fixed; top: 100vh;">
+    <defs>
+        <filter id="blob">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur"/>
+            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="blob"/>
+        </filter>
+    </defs>
+</svg>
+
+<div id="result"></div>
+
+
+</body>
+</html>

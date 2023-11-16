@@ -1,0 +1,26 @@
+@keyframes logo_kinetics {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.e-logo {
+  height: 40%;
+  position: relative;
+  width: 40%;
+}
+.e-logo svg:not(#orbit) {
+  animation: logo_kinetics 9.5s linear infinite normal forwards;
+  position: absolute;
+  top: -50%;
+  left: 0;
+  transform-origin: bottom center;
+}
+
+.logo-title {
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: normal;
+  color: #fff;
+  font-size: 16px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}/*# sourceMappingURL=logo.css.map */
