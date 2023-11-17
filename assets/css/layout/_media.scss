@@ -1,0 +1,90 @@
+
+@media screen and (max-width: 961px) {
+    .nav {
+      width: 100%;
+      position: fixed;
+      top: 0px;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    
+    .wrapper {
+      padding: 0;
+    }
+  
+    .nav-logo {
+      top: 10px;
+      position: absolute;
+      margin-left: auto;
+      margin-right: auto;
+      left: 3em;
+      right: 0;
+    }
+  
+    .label-toggle {
+      cursor: pointer;
+    }
+  
+    .menu-list {
+      background-color: $white-color;
+      width: 100%;
+      margin: 90px auto 0px;
+      display: none; // Hide the menu list by default
+      list-style-type: none;
+      opacity: 0;
+      padding: 0;
+      text-align: center;
+      visibility: hidden;
+      position: absolute;
+      top: 10px;
+      left: 0;
+      right: 0;
+  
+      li {
+        border-top: 2px solid $secondary;
+        color: #000;
+        display: block;
+        max-width: 100%;
+        font-size: 1.2em;
+        padding: 1em 0;
+      }
+  
+      &:last-of-type {
+        border-bottom: 2px solid $secondary;
+      }
+    } 
+  
+    #menu-toggle:checked ~ .menu-list {
+      opacity: 1;
+      height: auto;
+      visibility: visible;
+    }
+  
+    .label-toggle {
+      display: block;
+      height: 35px;
+      margin-top: 27.5px;
+      width: 35px;
+      top: 0px;
+      position: absolute;
+      right: 20px;
+    }
+    .menu-list {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .nav-link {
+      display: block;
+      margin: 15px 0;
+    }
+  }
+  
+  .hamburger {
+    background: linear-gradient(to bottom, $secondary 0%, $secondary 20%, transparent 20%, transparent 40%, $secondary 40%, $secondary 60%, transparent 60%, transparent 80%, $secondary 80%, $secondary 100%);
+  
+  
+  }
+  

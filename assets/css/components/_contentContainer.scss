@@ -1,0 +1,27 @@
+body {
+    font-family: $mada;
+    margin: 220px 0px 50px;
+    background-color: $background;
+    min-height: 100vh;
+    position: relative;
+    padding-top: 200px; 
+    &.scrolled {
+      .nav {
+        background-color: $navbar; // Change the background color when scrolling
+      }
+    }
+  }
+  
+// MyBand
+.MyBand{
+    height: 40vh;;
+  }
+  .MyBand h2{
+    color:$white-color;
+    text-align: center;
+  }
+  .MyBand p{
+  color:$white-color;
+  text-align: center;
+  font-size: 16px;
+  }

@@ -1,0 +1,44 @@
+// HERO 
+
+.hero {
+    position: relative;
+    overflow: hidden;
+    width: 50%;
+    margin: auto; /* Center the hero horizontally */
+    height: 130vh;
+  
+    .slider {
+      display: flex;
+      transition: transform 3s ease-in-out;
+  
+      .slide {
+        min-width: 100%;
+  
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+  
+    .bullets {
+      position: absolute;
+      bottom: 600px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 10px;
+  
+      .bullet {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: $white-color;
+        cursor: pointer;
+  
+        &.active-bullet {
+          background-color: #555;
+        }
+      }
+    }
+  }

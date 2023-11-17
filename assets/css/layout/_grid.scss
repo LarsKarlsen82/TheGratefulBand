@@ -1,0 +1,54 @@
+// grid
+
+#hvem {
+    height: 130vh;
+  }
+  
+  #hvem h2{
+    color: $white-color;
+    text-align: center;
+  }
+  
+  .image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  
+    @media screen and (max-width: 768px) {
+      grid-template-columns: 1fr; // Change to a single column for screens <= 768px
+  }
+  }
+  
+  .image-item {
+    text-align: center;
+    position: relative; // Add position relative for absolute positioning
+  
+    img {
+      width: $image-width;
+      height: auto;
+      border-radius: $image-border-radius;
+      transition: transform 0.3s ease-in-out; // Add a smooth transition effect
+  
+      &:hover {
+        transform: scale(1.1); // Increase scale on hover
+      }
+    }
+  
+    .image-text {
+      margin-top: 10px;
+      color: $white-color;
+      position: absolute;
+      bottom: 0; // Adjust the bottom position
+      left: 0;
+      width: 100%; // Make the text full width
+      padding: 10px; // Add padding for better visibility
+      box-sizing: border-box;
+      background-color: rgba(0, 0, 0, 0.7); // Semi-transparent background
+      opacity: 0; // Initially hide the text
+      transition: opacity 0.3s ease-in-out; // Add a smooth transition effect
+  
+      @at-root #{&}:hover {
+        opacity: 1; // Show the text on hover
+      }
+    }
+  }
