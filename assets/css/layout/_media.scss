@@ -87,4 +87,25 @@
   
   
   }
+  .modal{
+    
+    &-content {
+      width: 80%;
+      height: 110%;
+  }
+      h2 {
+        text-align: left;
+        margin-bottom: 40px; // Add some bottom margin for spacing
+        color: red;
+      }
+      p {
+        color: #fff;
+      }
+  
+    }
+  
+    // Add the following style for the navigation links
+    .nav-link {
+      cursor: pointer;
+    }
   
