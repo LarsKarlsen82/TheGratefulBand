@@ -6,6 +6,7 @@ body {
   min-height: 100vh;
   position: relative;
   padding-top: 200px;
+  max-width: auto;
 }
 body.scrolled .nav {
   background-color: #d10015;
